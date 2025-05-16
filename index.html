@@ -4,45 +4,55 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>IntuSens LiquiQ Pvt. Ltd.</title>
+
+  <!-- Google Fonts: Merriweather -->
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet" />
+
   <style>
+    :root {
+      --copper-glow: #ec834f;
+      --silver: #c0c0c0;
+      --white: #ffffff;
+      --dark-blue: #002147;
+    }
+
     body {
-      font-family: Arial, sans-serif;
-      background-color: #002147;
-      color: white;
+      font-family: 'Merriweather', Georgia, "Times New Roman", serif;
+      background-color: var(--dark-blue);
+      color: var(--white);
       margin: 0;
       padding: 0;
     }
-header {
-  background-color: #b87333; 
-  padding: 20px;
-}
- .logo-container {
+
+    header {
+      background-color: var(--dark-blue);
+      padding: 0;
+    }
+
+    .logo-container {
       display: flex;
       align-items: center;
       gap: 30px;
+      background-color: var(--copper-glow);
+      padding: 20px;
     }
-.logo-container img {
-  width: 250px; 
 
-.site-title h1 {
-  margin: 10px 0 5px;
-  color: #ffffff;       
-  font-size: 2.5em;    
-}
+    .logo-container img {
+      width: 250px;
+    }
 
-.site-title p {
-  font-style: italic;
-  color: #ffffff;      
-  font-size: 1.1em;
-}
-    header h1 {
+    .site-title h1 {
       margin: 10px 0 5px;
-      color: #ffffff;
+      color: var(--white);
+      font-size: 2.5em;
     }
-    header p {
+
+    .site-title p {
       font-style: italic;
-      color: #ffffff;
+      color: var(--silver);
+      font-size: 1.1em;
     }
+
     nav {
       background-color: #001f3f;
       display: flex;
@@ -50,42 +60,65 @@ header {
       gap: 2rem;
       padding: 10px;
     }
+
     nav a {
-      color: white;
+      color: var(--white);
       text-decoration: none;
       font-weight: bold;
     }
+
+    nav a:hover {
+      color: var(--copper-glow);
+    }
+
     .banner {
-      background-color: #ec834f;
+      background-color: var(--copper-glow);
       text-align: center;
       padding: 10px;
       font-weight: bold;
+      color: var(--dark-blue);
     }
+
     section {
       max-width: 900px;
       margin: 20px auto;
       padding: 0 20px;
     }
+
     section h2 {
-      color: #ec834f;
+      color: var(--copper-glow);
     }
+
+    section p,
+    section li {
+      color: var(--silver);
+    }
+
     ul {
       list-style-type: disc;
       padding-left: 20px;
     }
+
     footer {
       background-color: #001f3f;
       text-align: center;
       padding: 20px;
       margin-top: 40px;
+      color: var(--silver);
     }
+
     footer a {
-      color: #C0C0C0;
+      color: var(--silver);
       text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
 <body>
+  
 <header>
   <div class="logo-container">
     <img src="IS-LQ4.png" alt="IntuSens Logo" />
